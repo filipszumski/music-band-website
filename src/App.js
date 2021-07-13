@@ -4,15 +4,17 @@ import { Nav } from "./components/Nav";
 import { Section } from "./components/Section";
 import { About } from "./components/About";
 import { Videos } from "./components/Videos";
+import { UppersiteContainer } from "./components/UppersiteContainer";
+import { Main } from "./components/Main";
 
 function App() {
   return (
     <>
-      <div>
+      <UppersiteContainer>
         <Header />
         <Nav />
-      </div>
-      <main>
+      </UppersiteContainer>
+      <Main>
         <Section
           title="O nas"
           body={<About />}
@@ -21,7 +23,7 @@ function App() {
           title="Videos"
           body={<Videos />}
         />
-      </main>
+      </Main>
     </>
   );
 }
