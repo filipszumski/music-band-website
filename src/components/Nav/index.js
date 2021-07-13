@@ -1,14 +1,15 @@
 import React from "react";
+import { Button, Link, List, StyledNav } from "./styled";
 
 export const Nav = () => {
 
     return (
-        <nav>
-            <ul>
-                <li>O nas</li>
-                <li>Video</li>
-                <li>Kontakt</li>
-            </ul>
-        </nav>
+        <StyledNav>
+            <List>
+                <li><Link href="#about-us">O nas</Link></li>
+                <li><Link href="#videos">Muzyka</Link></li>
+                <li><Button>Kontakt</Button></li>
+            </List>
+        </StyledNav>
     )
 };

@@ -1,0 +1,38 @@
+import styled from "styled-components";
+
+export const List = styled.ul`
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 700;
+`;
+
+export const StyledNav = styled.nav`
+    align-self: center;
+`;
+
+export const Link = styled.a`
+    text-decoration: none;
+
+    &:visited {
+        color: inherit;
+    };
+
+    &:hover {
+        cursor: pointer;
+    };
+`;
+
+export const Button = styled.button`
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding :0px;
+    
+    &:hover {
+        cursor: pointer;
+    };
+`;
