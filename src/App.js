@@ -6,20 +6,25 @@ import { About } from "./components/About";
 import { Videos } from "./components/Videos";
 import { UppersiteContainer } from "./components/UppersiteContainer";
 import { Main } from "./components/Main";
+import { HeaderContainer } from "./components/HeaderContainer";
 
 function App() {
   return (
     <>
       <UppersiteContainer>
-        <Header />
-        <Nav />
+        <HeaderContainer>
+          <Header />
+          <Nav />
+        </HeaderContainer>
       </UppersiteContainer>
       <Main>
         <Section
+          id="about-us"
           title="O nas"
           body={<About />}
         />
         <Section
+          id="videos"
           title="Videos"
           body={<Videos />}
         />
