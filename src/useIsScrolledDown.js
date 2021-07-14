@@ -4,7 +4,6 @@ export const useIsScrolledDown = () => {
     const [isScrolledDown, setIsScrolledDown] = useState(false);
 
     useEffect(() => {
-        
         const handleScroll = () => {
             if (window.scrollY >= 80) {
                 setIsScrolledDown(true);
