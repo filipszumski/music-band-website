@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
     padding: 20px 30px;
     top: 0;
     transition: all 0.5s;
+    background: rgba(0, 0, 0, 0.35);
 
     ${({ isScrolled }) => isScrolled && css`
     background: rgba(0, 0, 0, 0.95);
