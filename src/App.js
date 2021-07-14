@@ -4,7 +4,6 @@ import { Nav } from "./components/Nav";
 import { Section } from "./components/Section";
 import { About } from "./components/About";
 import { Videos } from "./components/Videos";
-import { UppersiteContainer } from "./components/UppersiteContainer";
 import { Main } from "./components/Main";
 import { HeaderContainer } from "./components/HeaderContainer";
 import { GlobalStyle } from "./GlobalStyle";
@@ -17,10 +16,10 @@ function App() {
     <>
       <GlobalStyle isScrolled={isScrolledDown} />
 
-        <HeaderContainer isScrolled={isScrolledDown}>
-          <Header />
-          <Nav />
-        </HeaderContainer>
+      <HeaderContainer isScrolled={isScrolledDown}>
+        <Header />
+        <Nav />
+      </HeaderContainer>
       <Main>
         <Section
           id="about-us"
