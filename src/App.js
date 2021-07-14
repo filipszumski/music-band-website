@@ -7,12 +7,18 @@ import { Videos } from "./components/Videos";
 import { UppersiteContainer } from "./components/UppersiteContainer";
 import { Main } from "./components/Main";
 import { HeaderContainer } from "./components/HeaderContainer";
+import { GlobalStyle } from "./GlobalStyle";
+import { useScrollPosition } from "./useScrollPosition";
 
 function App() {
+  const scrollPosition = useScrollPosition();
+
   return (
     <>
+      <GlobalStyle isScrolled={scrollPosition === 0 ? false : true} />
+
       <UppersiteContainer>
-        <HeaderContainer>
+        <HeaderContainer isScrolled={scrollPosition === 0 ? false : true}>
           <Header />
           <Nav />
         </HeaderContainer>
@@ -25,7 +31,7 @@ function App() {
         />
         <Section
           id="videos"
-          title="Videos"
+          title="Muzyka"
           body={<Videos />}
         />
       </Main>
