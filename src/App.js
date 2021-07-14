@@ -8,17 +8,17 @@ import { UppersiteContainer } from "./components/UppersiteContainer";
 import { Main } from "./components/Main";
 import { HeaderContainer } from "./components/HeaderContainer";
 import { GlobalStyle } from "./GlobalStyle";
-import { useScrollPosition } from "./useScrollPosition";
+import { useIsScrolledDown } from "./useIsScrolledDown";
 
 function App() {
-  const scrollPosition = useScrollPosition();
+  const isScrolledDown = useIsScrolledDown();
 
   return (
     <>
-      <GlobalStyle isScrolled={scrollPosition === 0 ? false : true} />
+      <GlobalStyle isScrolled={isScrolledDown} />
 
       <UppersiteContainer>
-        <HeaderContainer isScrolled={scrollPosition === 0 ? false : true}>
+        <HeaderContainer isScrolled={isScrolledDown}>
           <Header />
           <Nav />
         </HeaderContainer>
