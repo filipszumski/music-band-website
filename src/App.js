@@ -8,30 +8,33 @@ import { Main } from "./components/Main";
 import { HeaderContainer } from "./components/HeaderContainer";
 import { GlobalStyle } from "./GlobalStyle";
 import { useIsScrolledDown } from "./useIsScrolledDown";
+import { MainContainer } from "./components/MainContainer";
 
 function App() {
   const isScrolledDown = useIsScrolledDown();
 
   return (
     <>
-      <GlobalStyle isScrolled={isScrolledDown} />
+      <GlobalStyle />
 
       <HeaderContainer isScrolled={isScrolledDown}>
         <Header />
         <Nav />
       </HeaderContainer>
-      <Main>
-        <Section
-          id="about-us"
-          title="O nas"
-          body={<About />}
-        />
-        <Section
-          id="videos"
-          title="Muzyka"
-          body={<Videos />}
-        />
-      </Main>
+      <MainContainer isScrolled={isScrolledDown}>
+        <Main>
+          <Section
+            id="about-us"
+            title="O nas"
+            body={<About />}
+          />
+          <Section
+            id="videos"
+            title="Muzyka"
+            body={<Videos />}
+          />
+        </Main>
+      </MainContainer>
     </>
   );
 }
