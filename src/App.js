@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header } from "./components/Header";
 import { Nav } from "./components/Nav";
 import { Section } from "./components/Section";
@@ -13,6 +13,7 @@ import { Form } from "./components/Form";
 
 function App() {
   const isScrolledDown = useIsScrolledDown();
+  const [isFormActive, setIsFormActive] = useState(false);
 
   return (
     <>
@@ -20,7 +21,9 @@ function App() {
 
       <HeaderContainer isScrolled={isScrolledDown}>
         <Header />
-        <Nav />
+        <Nav
+          setIsFormActive={setIsFormActive}
+        />
       </HeaderContainer>
       <MainContainer isScrolled={isScrolledDown}>
         <Main>
@@ -36,7 +39,10 @@ function App() {
           />
         </Main>
       </MainContainer>
-      <Form />
+      <Form
+        isFormActive={isFormActive}
+        setIsFormActive={setIsFormActive}
+      />
     </>
   );
 }
