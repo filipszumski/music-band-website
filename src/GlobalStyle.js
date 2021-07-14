@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import background from "./images/Fisz-Emade-Tworzywo_Juwenalia-UKSW_2017-05-26_21-06-20.jpg"
 
 export const GlobalStyle = createGlobalStyle`
