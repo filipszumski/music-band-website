@@ -7,6 +7,7 @@ export const List = styled.ul`
     gap: 30px;
     font-size: 18px;
     font-weight: 700;
+    margin: 0px;
 `;
 
 export const StyledNav = styled.nav`
@@ -29,6 +30,7 @@ export const Button = styled.button`
     border: none;
     background-color: inherit;
     font-size: inherit;
+    color: inherit;
     font-weight: inherit;
     padding :0px;
     
