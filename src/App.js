@@ -17,12 +17,10 @@ function App() {
     <>
       <GlobalStyle isScrolled={isScrolledDown} />
 
-      <UppersiteContainer>
         <HeaderContainer isScrolled={isScrolledDown}>
           <Header />
           <Nav />
         </HeaderContainer>
-      </UppersiteContainer>
       <Main>
         <Section
           id="about-us"
