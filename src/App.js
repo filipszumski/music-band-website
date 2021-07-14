@@ -9,6 +9,7 @@ import { HeaderContainer } from "./components/HeaderContainer";
 import { GlobalStyle } from "./GlobalStyle";
 import { useIsScrolledDown } from "./useIsScrolledDown";
 import { MainContainer } from "./components/MainContainer";
+import { Form } from "./components/Form";
 
 function App() {
   const isScrolledDown = useIsScrolledDown();
@@ -35,6 +36,7 @@ function App() {
           />
         </Main>
       </MainContainer>
+      <Form />
     </>
   );
 }
