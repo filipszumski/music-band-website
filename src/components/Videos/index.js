@@ -26,14 +26,13 @@ export const Videos = () => {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen>
-
                     </Video>}
             />
             <VideoContainer
-                title="Czerwona sukienka"
+                title="Wolne dni"
                 body={
                     <Video
-                        src="https://www.youtube.com/embed/bQWQxdCs7uc"
+                        src="https://www.youtube.com/embed/IXYy6u27NbU"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
