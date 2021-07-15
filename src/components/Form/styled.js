@@ -7,7 +7,7 @@ export const StyledForm = styled.form`
     height: 100%;
     width: 50vw;
     color: #eeee;
-    background-color: #1A1A1A  ;
+    background-color: #2A2A2A ;
     overflow-y: auto;
     padding: 25px;
     display: none;
@@ -29,4 +29,18 @@ export const FormContentWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
+`;
+
+export const Button = styled.button`
+
+    ${({ justifyStart }) => justifyStart && css`
+        color: #eeee;
+        border: none;
+        background-color: inherit;
+        justify-self: start;
+    `}
+
+    &:hover {
+        cursor: pointer;
+    }
 `;
