@@ -32,12 +32,25 @@ export const FormContentWrapper = styled.div`
 `;
 
 export const Button = styled.button`
+    padding: 7px;
+    border-radius: 0.5rem;
+    background-color: #eeee;
+    border: none;
+
+    &:hover{
+        filter: brightness(115%);
+    }
 
     ${({ justifyStart }) => justifyStart && css`
         color: #eeee;
         border: none;
         background-color: inherit;
         justify-self: start;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 18px;
+        gap: 10px;
     `}
 
     &:hover {
