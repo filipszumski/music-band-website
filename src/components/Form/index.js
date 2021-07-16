@@ -7,7 +7,7 @@ import { questions } from "./questions";
 import { UserVerification } from "./UserVerification";
 
 export const Form = ({ isFormActive, setIsFormActive }) => {
-    const inisitalFormDataState = {
+    const initialFormDataState = {
         fields: {
             name: "",
             email: "",
@@ -22,14 +22,14 @@ export const Form = ({ isFormActive, setIsFormActive }) => {
         },
     };
 
-    const [formData, setFormData] = useState(inisitalFormDataState);
+    const [formData, setFormData] = useState(initialFormDataState);
     const [showErrors, setShowErrors] = useState(false);
     const [question, setQuestion] = useState(questions[Math.floor(Math.random() * questions.length)]);
     const validate = useFormValidator();
 
     const handleClick = () => {
         setIsFormActive(prevState => !prevState);
-        setFormData(inisitalFormDataState);
+        setFormData(initialFormDataState);
         setShowErrors(false);
     };
 
@@ -49,7 +49,7 @@ export const Form = ({ isFormActive, setIsFormActive }) => {
         };
 
         setIsFormActive(false);
-        setFormData(inisitalFormDataState);
+        setFormData(initialFormDataState);
         setQuestion(questions[Math.floor(Math.random() * questions.length)]);
         setShowErrors(false);
         setTimeout(() => alert("Udało się wysłać formularz! :)"), 300);
