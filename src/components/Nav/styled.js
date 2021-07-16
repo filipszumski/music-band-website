@@ -5,7 +5,7 @@ export const List = styled.ul`
     list-style-type: none;
     padding-left: 0px;
     gap: 30px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     margin: 0px;
 `;
@@ -16,6 +16,7 @@ export const StyledNav = styled.nav`
 
 export const Link = styled.a`
     text-decoration: none;
+    color: inherit;
 
     &:visited {
         color: inherit;
