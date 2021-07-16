@@ -63,7 +63,7 @@ export const Form = ({ isFormActive, setIsFormActive }) => {
                     justifyStart onClick={handleClick}>
                     {
                         <svg width="8" height="14" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.3418 0.886047L0.113895 5.11395L4.3418 9.34185" stroke="#eeee" stroke-width="2" />
+                            <path d="M4.3418 0.886047L0.113895 5.11395L4.3418 9.34185" stroke="#eeee" strokeWidth="2" />
                         </svg>
                     }
                     <span>Wróć</span>
