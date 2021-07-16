@@ -8,7 +8,7 @@ export const UserVerification = ({ question, setQuestion }) => {
             <p>
                 {question.content}
             </p>
-            <ul>
+            <ol type="A">
                 {question.answers.map((answer, liIndex) => (
                     <li key={answer.answer}>
                         <input
@@ -35,7 +35,7 @@ export const UserVerification = ({ question, setQuestion }) => {
                         <label htmlFor={answer.answer}>{answer.answer}</label>
                     </li>
                 ))}
-            </ul>
+            </ol>
         </fieldset>
     )
 }
