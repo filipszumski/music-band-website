@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/music-band-website/static/js/main.93908709.chunk.js",
-    "main.js.map": "/music-band-website/static/js/main.93908709.chunk.js.map",
+    "main.js": "/music-band-website/static/js/main.cc0e4d76.chunk.js",
+    "main.js.map": "/music-band-website/static/js/main.cc0e4d76.chunk.js.map",
     "runtime-main.js": "/music-band-website/static/js/runtime-main.a28f75f9.js",
     "runtime-main.js.map": "/music-band-website/static/js/runtime-main.a28f75f9.js.map",
     "static/js/2.b81fbbac.chunk.js": "/music-band-website/static/js/2.b81fbbac.chunk.js",
     "static/js/2.b81fbbac.chunk.js.map": "/music-band-website/static/js/2.b81fbbac.chunk.js.map",
     "index.html": "/music-band-website/index.html",
     "static/js/2.b81fbbac.chunk.js.LICENSE.txt": "/music-band-website/static/js/2.b81fbbac.chunk.js.LICENSE.txt",
-    "static/media/Fisz-Emade-Tworzywo_Juwenalia-UKSW_2017-05-26_21-06-20.1d42883e.jpg": "/music-band-website/static/media/Fisz-Emade-Tworzywo_Juwenalia-UKSW_2017-05-26_21-06-20.1d42883e.jpg"
+    "static/media/Fisz-Emade-Tworzywo_Juwenalia-UKSW_2017-05-26_21-06-20.711ae89a.jpg": "/music-band-website/static/media/Fisz-Emade-Tworzywo_Juwenalia-UKSW_2017-05-26_21-06-20.711ae89a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a28f75f9.js",
     "static/js/2.b81fbbac.chunk.js",
-    "static/js/main.93908709.chunk.js"
+    "static/js/main.cc0e4d76.chunk.js"
   ]
 }
