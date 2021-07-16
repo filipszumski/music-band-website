@@ -7,13 +7,12 @@ export const Wrapper = styled.p`
 `;
 
 export const StyledTextarea = styled.textarea`
+    background-color: #eeee;
+    resize: vertical;
 
 ${({ error }) => error && css`
     border: 2px solid crimson;
 `}
-`;
-
-export const Label = styled.label`
 `;
 
 export const ErrorText = styled.span`

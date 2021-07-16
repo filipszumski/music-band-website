@@ -1,6 +1,6 @@
 import React from "react";
 import { ErrorText } from "../Input/styled";
-import { Label, StyledTextarea, Wrapper } from "./styled";
+import { StyledTextarea, Wrapper } from "./styled";
 
 export const Textarea = ({ name, id, labelText, formData, setFormData, validate, showErrors }) => {
 
@@ -24,7 +24,7 @@ export const Textarea = ({ name, id, labelText, formData, setFormData, validate,
 
     return (
         <Wrapper>
-            <Label htmlFor={id}>{labelText}* : </Label>
+            <label htmlFor={id}>{labelText}* : </label>
             <StyledTextarea
                 rows="15"
                 name={name}

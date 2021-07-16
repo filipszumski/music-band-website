@@ -1,5 +1,5 @@
 import React from "react";
-import { ErrorText, Label, StyledInput, Wrapper } from "./styled";
+import { ErrorText, StyledInput, Wrapper } from "./styled";
 
 export const Input = ({ type, name, id, labelText, formData, setFormData, validate, showErrors }) => {
 
@@ -23,7 +23,7 @@ export const Input = ({ type, name, id, labelText, formData, setFormData, valida
 
     return (
         <Wrapper>
-            <Label htmlFor={id}>{labelText}* : </Label>
+            <label htmlFor={id}>{labelText}* : </label>
             <StyledInput
                 type={type}
                 name={name}
